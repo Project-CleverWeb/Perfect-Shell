@@ -100,6 +100,15 @@ function git-unpushed {
     fi
 }
 
+function git-untracked {
+    untracked=$(git clean --dry-run | wc -l)
+    if [ $untracked -gt 0 ]
+    then
+        echo "Untracked: "$untracked
+    fi
+}
+
+
 
 
 # This PS1 snippet was adopted from code for MAC/BSD I saw from:
@@ -114,7 +123,7 @@ if [ $? -eq 0 ]; then \
     echo $(__git_ps1 " '$IWhite'('$IGreen'%s'$IWhite') '$IYellow'`git-unpushed`"); \
   else \
     # @5 - Changes to working tree
-    echo $(__git_ps1 " '$IWhite'('$IYellow'%s'$IWhite') '$IYellow'`git diff --shortstat`"); \
+    echo $(__git_ps1 " '$IWhite'('$IYellow'%s'$IWhite') '$IYellow'`git diff --shortstat` '$IRed'`git-untracked`"); \
   fi) '$Color_Off' "; \
 else \
   # @2 - Prompt when not in GIT repo
