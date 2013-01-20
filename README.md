@@ -2,7 +2,7 @@
 
 **Site :** [projectcleverweb.com](http://projectcleverweb.com)  
 **Description :**  
-The idea is to create a day-to-day shell that is easy to read, cross OS compatible/consistant, and gas git intergration. Right now this only supports most linux bash prompts (and possibly Mac, idk I dont normally use Mac, but i know Mac & Linux are very closely related). Windows version may be available withing a couple days/weeks.
+The idea is to create a day-to-day shell that is easy to read, cross OS compatible/consistent, and has git integration. Right now this only supports most linux bash prompts (and possibly Mac, idk I dont normally use Mac, but i know Mac & Linux are very closely related). Windows version may be available withing a couple days/weeks.
 
 &nbsp;    
 
