@@ -14,7 +14,7 @@ The idea is to create a day-to-day shell that is easy to read, cross OS compatib
 Most informational aspects (such us the codex or this readme) will be updated as full versions are released. Requests for ETA's on versions or update will be ignored entirely.  
 
 ##Screen Shots##
-- Coming Soon  
+![Prompt Example](http://i.imgur.com/upiZDQu.png "Prompt Example")
 
 ##Installation##
 **Requirements**  
