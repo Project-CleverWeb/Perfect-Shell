@@ -107,7 +107,7 @@ psc_clean_branch=$H_Green   # Git only
 psc_dirty_branch=$H_Yellow  # Git only
 psc_git_changes=$H_Yellow   # Git only
 psc_git_untracked=$H_Red    # Git only
-psc_not_pushed=$H_Red       # Git only
+psc_not_pushed=$H_Yellow       # Git only
 
 
 
