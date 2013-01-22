@@ -107,9 +107,7 @@ psc_clean_branch=$H_Green   # Git only
 psc_dirty_branch=$H_Yellow  # Git only
 psc_git_changes=$H_Yellow   # Git only
 psc_git_untracked=$H_Red    # Git only
-psc_not_pushed=$H_Yellow       # Git only
-
-
+psc_not_pushed=$H_Yellow    # Git only
 
 
 # Lets put it all together now
@@ -142,5 +140,5 @@ export PS1=$NL$psc_user$User$psc_at"@"$psc_host$ps_host$ps_spacer$psc_dir$ps_dir
     fi) '$No_Color' "; \
   else \
     # Prompt when not in Git repo
-    echo "'"'$Bold'('$psc_items'\$(/bin/ls -1 | /usr/bin/wc -l | /bin/sed 's: ::g') Items'$Bold', '$psc_dir_size'\$(/bin/ls -lah | /bin/grep -m 1 total | /bin/sed 's/total //')b'$Bold')"$ps_spacer$ps_time$No_Color'"; \
-  fi)'$NL"  "$psc_sym"\$'$No_Color': "$psc_commands
+    echo "'"$Bold($psc_items\$(/bin/ls -1 | /usr/bin/wc -l | /bin/sed 's: ::g') Items$Bold, $psc_dir_size\$(/bin/ls -lah | /bin/grep -m 1 total | /bin/sed 's/total //')b$Bold)"$ps_spacer$ps_time$No_Color'"; \
+  fi)'$NL"  "$psc_sym"\$$No_Color: "$psc_commands
