@@ -1,117 +1,117 @@
 #!/bin/bash
 
 # Reset
-No_Color="\[\033[0m\]"        # Default Color
-Bold="\[\033[1;0m\]"
-Underline="\[\033[4;0m\]"
+export No_Color="\[\033[0m\]"        # Default Color
+export Bold="\[\033[1;0m\]"
+export Underline="\[\033[4;0m\]"
 
 # Regular Colors
-Black="\[\033[0;30m\]"        # Black
-Red="\[\033[0;31m\]"          # Red
-Green="\[\033[0;32m\]"        # Green
-Yellow="\[\033[0;33m\]"       # Yellow
-Blue="\[\033[0;34m\]"         # Blue
-Purple="\[\033[0;35m\]"       # Purple
-Cyan="\[\033[0;36m\]"         # Cyan
-White="\[\033[0;37m\]"        # White
+export Black="\[\033[0;30m\]"        # Black
+export Red="\[\033[0;31m\]"          # Red
+export Green="\[\033[0;32m\]"        # Green
+export Yellow="\[\033[0;33m\]"       # Yellow
+export Blue="\[\033[0;34m\]"         # Blue
+export Purple="\[\033[0;35m\]"       # Purple
+export Cyan="\[\033[0;36m\]"         # Cyan
+export White="\[\033[0;37m\]"        # White
 
 # Bold
-B_Black="\[\033[1;30m\]"      # Black
-B_Red="\[\033[1;31m\]"        # Red
-B_Green="\[\033[1;32m\]"      # Green
-B_Yellow="\[\033[1;33m\]"     # Yellow
-B_Blue="\[\033[1;34m\]"       # Blue
-B_Purple="\[\033[1;35m\]"     # Purple
-B_Cyan="\[\033[1;36m\]"       # Cyan
-B_White="\[\033[1;37m\]"      # White
+export B_Black="\[\033[1;30m\]"      # Black
+export B_Red="\[\033[1;31m\]"        # Red
+export B_Green="\[\033[1;32m\]"      # Green
+export B_Yellow="\[\033[1;33m\]"     # Yellow
+export B_Blue="\[\033[1;34m\]"       # Blue
+export B_Purple="\[\033[1;35m\]"     # Purple
+export B_Cyan="\[\033[1;36m\]"       # Cyan
+export B_White="\[\033[1;37m\]"      # White
 
 # Underline
-U_Black="\[\033[4;30m\]"      # Black
-U_Red="\[\033[4;31m\]"        # Red
-U_Green="\[\033[4;32m\]"      # Green
-U_Yellow="\[\033[4;33m\]"     # Yellow
-U_Blue="\[\033[4;34m\]"       # Blue
-U_Purple="\[\033[4;35m\]"     # Purple
-U_Cyan="\[\033[4;36m\]"       # Cyan
-U_White="\[\033[4;37m\]"      # White
+export U_Black="\[\033[4;30m\]"      # Black
+export U_Red="\[\033[4;31m\]"        # Red
+export U_Green="\[\033[4;32m\]"      # Green
+export U_Yellow="\[\033[4;33m\]"     # Yellow
+export U_Blue="\[\033[4;34m\]"       # Blue
+export U_Purple="\[\033[4;35m\]"     # Purple
+export U_Cyan="\[\033[4;36m\]"       # Cyan
+export U_White="\[\033[4;37m\]"      # White
 
 # Background
-BG_Black="\[\033[40m\]"       # Black
-BG_Red="\[\033[41m\]"         # Red
-BG_Green="\[\033[42m\]"       # Green
-BG_Yellow="\[\033[43m\]"      # Yellow
-BG_Blue="\[\033[44m\]"        # Blue
-BG_Purple="\[\033[45m\]"      # Purple
-BG_Cyan="\[\033[46m\]"        # Cyan
-BG_White="\[\033[47m\]"       # White
+export BG_Black="\[\033[40m\]"       # Black
+export BG_Red="\[\033[41m\]"         # Red
+export BG_Green="\[\033[42m\]"       # Green
+export BG_Yellow="\[\033[43m\]"      # Yellow
+export BG_Blue="\[\033[44m\]"        # Blue
+export BG_Purple="\[\033[45m\]"      # Purple
+export BG_Cyan="\[\033[46m\]"        # Cyan
+export BG_White="\[\033[47m\]"       # White
 
 # High Intensty
-H_Black="\[\033[0;90m\]"      # Black
-H_Red="\[\033[0;91m\]"        # Red
-H_Green="\[\033[0;92m\]"      # Green
-H_Yellow="\[\033[0;93m\]"     # Yellow
-H_Blue="\[\033[0;94m\]"       # Blue
-H_Purple="\[\033[0;95m\]"     # Purple
-H_Cyan="\[\033[0;96m\]"       # Cyan
-H_White="\[\033[0;97m\]"      # White
+export H_Black="\[\033[0;90m\]"      # Black
+export H_Red="\[\033[0;91m\]"        # Red
+export H_Green="\[\033[0;92m\]"      # Green
+export H_Yellow="\[\033[0;93m\]"     # Yellow
+export H_Blue="\[\033[0;94m\]"       # Blue
+export H_Purple="\[\033[0;95m\]"     # Purple
+export H_Cyan="\[\033[0;96m\]"       # Cyan
+export H_White="\[\033[0;97m\]"      # White
 
 # Bold High Intensty
-BH_Black="\[\033[1;90m\]"     # Black
-BH_Red="\[\033[1;91m\]"       # Red
-BH_Green="\[\033[1;92m\]"     # Green
-BH_Yellow="\[\033[1;93m\]"    # Yellow
-BH_Blue="\[\033[1;94m\]"      # Blue
-BH_Purple="\[\033[1;95m\]"    # Purple
-BH_Cyan="\[\033[1;96m\]"      # Cyan
-BH_White="\[\033[1;97m\]"     # White
+export BH_Black="\[\033[1;90m\]"     # Black
+export BH_Red="\[\033[1;91m\]"       # Red
+export BH_Green="\[\033[1;92m\]"     # Green
+export BH_Yellow="\[\033[1;93m\]"    # Yellow
+export BH_Blue="\[\033[1;94m\]"      # Blue
+export BH_Purple="\[\033[1;95m\]"    # Purple
+export BH_Cyan="\[\033[1;96m\]"      # Cyan
+export BH_White="\[\033[1;97m\]"     # White
 
 # High Intensty backgrounds
-BGH_Black="\[\033[0;100m\]"   # Black
-BGH_Red="\[\033[0;101m\]"     # Red
-BGH_Green="\[\033[0;102m\]"   # Green
-BGH_Yellow="\[\033[0;103m\]"  # Yellow
-BGH_Blue="\[\033[0;104m\]"    # Blue
-BGH_Purple="\[\033[10;95m\]"  # Purple
-BGH_Cyan="\[\033[0;106m\]"    # Cyan
-BGH_White="\[\033[0;107m\]"   # White
+export BGH_Black="\[\033[0;100m\]"   # Black
+export BGH_Red="\[\033[0;101m\]"     # Red
+export BGH_Green="\[\033[0;102m\]"   # Green
+export BGH_Yellow="\[\033[0;103m\]"  # Yellow
+export BGH_Blue="\[\033[0;104m\]"    # Blue
+export BGH_Purple="\[\033[10;95m\]"  # Purple
+export BGH_Cyan="\[\033[0;106m\]"    # Cyan
+export BGH_White="\[\033[0;107m\]"   # White
 
 # Various variables
-Time12h="\T"
-Time24h="\t"
-Time="\@"
-sPath="\w"
-Path="\W"
-NL="\n"
-Jobs="\j"
-Host="\h"
-HostLong="\H"
-User="\u"
+export Time12h="\T"
+export Time24h="\t"
+export Time="\@"
+export sPath="\w"
+export Path="\W"
+export NL="\n"
+export Jobs="\j"
+export Host="\h"
+export HostLong="\H"
+export User="\u"
 
 # Default values (ps = Perfect-Shell variable; psc = Perfect-Shell color variable)
 
 
-ps_spacer="  "
-ps_host=$Host
-ps_dir=$sPath
-ps_time=$Time
+export ps_spacer="  "
+export ps_host=$Host
+export ps_dir=$sPath
+export ps_time=$Time
 
-psc_rootuser=$H_Red        # Requires root version of Perfect-Shell!
-psc_rootsym=$H_Red         # Requires root version of Perfect-Shell!
+export psc_rootuser=$H_Red        # Requires root version of Perfect-Shell!
+export psc_rootsym=$H_Red         # Requires root version of Perfect-Shell!
 
-psc_commands=$No_Color
-psc_user=$H_Green
-psc_at=$No_Color
-psc_host=$No_Color
-psc_dir=$H_Blue
-psc_items=$H_Cyan
-psc_dir_size=$H_Cyan
-psc_time=$No_Color
-psc_sym=$No_Color
-psc_clean_branch=$H_Green   # Git only
-psc_dirty_branch=$H_Yellow  # Git only
-psc_git_changes=$H_Yellow   # Git only
-psc_git_untracked=$H_Red    # Git only
-psc_not_pushed=$H_Yellow    # Git only
+export psc_commands=$No_Color
+export psc_user=$H_Green
+export psc_at=$No_Color
+export psc_host=$No_Color
+export psc_dir=$H_Blue
+export psc_items=$H_Cyan
+export psc_dir_size=$H_Cyan
+export psc_time=$No_Color
+export psc_sym=$No_Color
+export psc_clean_branch=$H_Green   # Git only
+export psc_dirty_branch=$H_Yellow  # Git only
+export psc_git_changes=$H_Yellow   # Git only
+export psc_git_untracked=$H_Red    # Git only
+export psc_not_pushed=$H_Yellow    # Git only
 
 
 # Lets put it all together now
