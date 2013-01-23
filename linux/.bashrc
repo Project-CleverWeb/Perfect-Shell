@@ -89,20 +89,24 @@ User="\u"
 
 # Default values (ps = Perfect-Shell variable; psc = Perfect-Shell color variable)
 
+
 ps_spacer="  "
 ps_host=$Host
 ps_dir=$sPath
 ps_time=$Time
 
-psc_commands=$Bold
-psc_user=$BH_Green
-psc_at=$Bold
-psc_host=$Bold
-psc_dir=$BH_Blue
-psc_items=$BH_Cyan
-psc_dir_size=$BH_Cyan
-psc_time=$Bold
-psc_sym=$Bold
+psc_rootuser=$H_Red        # Requires root version of Perfect-Shell!
+psc_rootsym=$H_Red         # Requires root version of Perfect-Shell!
+
+psc_commands=$No_Color
+psc_user=$H_Green
+psc_at=$No_Color
+psc_host=$No_Color
+psc_dir=$H_Blue
+psc_items=$H_Cyan
+psc_dir_size=$H_Cyan
+psc_time=$No_Color
+psc_sym=$No_Color
 psc_clean_branch=$H_Green   # Git only
 psc_dirty_branch=$H_Yellow  # Git only
 psc_git_changes=$H_Yellow   # Git only
