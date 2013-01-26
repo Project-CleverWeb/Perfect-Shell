@@ -116,6 +116,17 @@ export psc_not_pushed=$H_Yellow    # Git only
 
 # Lets put it all together now
 
+# lets fix some of the latest fedora builds (thx to http://morefedora.blogspot.com/2012/12/git-bash-prompt-in-fedora-18.html)
+if [ -f /usr/share/git-core/contrib/completion/git-prompt.sh ]; then
+  . /usr/share/git-core/contrib/completion/git-prompt.sh
+fi
+
+# This SHOULD help some Mac users (un-tested!)
+# If you encounter an error the send the output and a short description to git@projectcleverweb.com
+if [ -f ~/.git-prompt.sh ]; then
+  source ~/.git-prompt.sh
+fi
+
 function git-unpushed {
     brinfo=$(git branch -v)
     if [[ $brinfo =~ ("[ahead "([[:digit:]]*)]) ]]
