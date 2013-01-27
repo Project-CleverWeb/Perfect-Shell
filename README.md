@@ -18,8 +18,8 @@ Most informational aspects (such us the codex or this readme) will be updated as
 
 ##Installation##
 **Requirements**  
-- &#40;**recommended**&#41; [Install Git](https://help.github.com/articles/set-up-git) (try one of these in terminal: sudo apt-get install git **OR** sudo yum install git) and make sure it's added to your $path (you may need to google how to do this for your OS). Skipping this step will cause errors to appear while browsing Git repositories!  
-- &#40;**optional**&#41; Set the upstream for your braches to see 'not pushed' counts. This may be done automatically with some Windows installations of Git.
+- **recommended :** [Install Git](https://help.github.com/articles/set-up-git) (try one of these in terminal: sudo apt-get install git **OR** sudo yum install git) and make sure it's added to your $path (you may need to google how to do this for your OS). Skipping this step will cause errors to appear while browsing Git repositories!  
+- **optional :** Set the upstream for your braches to see 'not pushed' counts. This may be done automatically with some Windows installations of Git.
 
 **Linux/Mac** (Recommended) (installer coming soon)
 - Make sure that you have hidden files showing (try ctrl + H/cmd + H)
