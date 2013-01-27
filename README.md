@@ -18,12 +18,12 @@ Most informational aspects (such us the codex or this readme) will be updated as
 
 ##Installation##
 **Requirements**  
-- (**recommended**) [Insatll Git](https://help.github.com/articles/set-up-git) (try one of these in terminal: sudo apt-get install git **OR** sudo yum install git) and make sure it's added to your $path (you may need to google how to do this for your OS). Skipping this step will cause errors to appear while browsing Git repositories!  
-- (**optional**) Set the upstream for your braches to see 'not pushed' counts. This may be done automatically with some Windows installations of Git.
+- {**recommended**} [Install Git](https://help.github.com/articles/set-up-git) (try one of these in terminal: sudo apt-get install git **OR** sudo yum install git) and make sure it's added to your $path (you may need to google how to do this for your OS). Skipping this step will cause errors to appear while browsing Git repositories!  
+- {**optional**} Set the upstream for your braches to see 'not pushed' counts. This may be done automatically with some Windows installations of Git.
 
 **Linux/Mac** (Recommended) (installer coming soon)
-- Make sure that you have hidden file showing (try ctrl + H/cmd + H)
-- Add .bashrc to to your */home* directory (e.g. */home/your_name*). If the file already exists, open it in a text editor and add the contents of the new *.bashrc* to the old *.bashrc* (replacing the file should not break anything, but better safe than sorry). This file is sometimes named *.bash_profile*.  
+- Make sure that you have hidden files showing (try ctrl + H/cmd + H)
+- Add *.bashrc* to to your */home* directory (e.g. */home/your_name*). If the file already exists, open it in a text editor and add the contents of the new *.bashrc* to the old *.bashrc* (replacing the file should not break anything, but better safe than sorry). This file is sometimes named *.bash_profile*.  
 - If you want to make this effect all users and not just yourself, **ONLY** add the contents the *.bashrc* file to the bottom of */etc/bash.bashrc*. The file may have a simular name and not *bash.bashrc*, however experiance says it should be *bash.bashrc*  
 - Reopen any bash/terminal windows to see the effect.  
 
@@ -43,7 +43,7 @@ Forget they exist
 
 **Notices :**  
 - Some text is abbreviated, and may not be what you expect. Please see the section below called "[Abbreviations](#abbreviations)" for a guide as to what some abbreviations mean.  
-- Windows versions will use [Ancicon](https://github.com/adoxa/ansicon) to render colors. IMPORTANT: At the moment, ansicon's repository does not contain all the proper files, please check this site ([http://adoxa.3eeweb.com/ansicon/](http://adoxa.3eeweb.com/ansicon/)) to download ansicon.  
+- Windows versions will use [Ancicon](https://github.com/adoxa/ansicon) to render colors. IMPORTANT: At the moment, ansicon's repository does not contain all the proper files, please check this site ([adoxa.3eeweb.com/ansicon/](http://adoxa.3eeweb.com/ansicon/)) to download ansicon.  
 - When browsing a linux server that has Perfect-Shell via SSH (e.g. putty) coloring appears oddly. (no known fix)
 
 **Warnings :**  
