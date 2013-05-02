@@ -1,11 +1,9 @@
 #!/bin/bash
 
-#  Customize BASH PS1 prompt to show current GIT repository and branch.
-#  by Mike Stewart - http://MediaDoneRight.com
-
-#  SETUP CONSTANTS
-#  Bunch-o-predefined colors.  Makes reading code easier than escape sequences.
-#  I don't remember where I found this.  o_O
+#  This file is obsolete, and will be upgraded soon.
+# check if root
+# add aliases for PS
+# load PS1
 
 # Reset
 Color_Off="\[\033[0m\]"       # Text Reset

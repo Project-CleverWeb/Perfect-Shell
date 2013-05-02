@@ -1,0 +1,1 @@
+rem windows equevalent to .bash_ps
