@@ -2,7 +2,7 @@
 
 **Site :** [projectcleverweb.com](http://projectcleverweb.com)  
 **Description :**  
-The idea is to create a day-to-day shell that is easy to read, cross OS compatible/consistent, and has git integration. Right now this only supports most linux bash prompts (and possibly Mac, idk I dont normally use Mac, but i know Mac & Linux are very closely related). Windows version may be available withing a couple days/weeks.
+The idea is to create an easily customizable shell that is easy to read, cross OS compatible/consistent, and has git integration.
 
 &nbsp;    
 
@@ -17,20 +17,8 @@ Most informational aspects (such us the codex or this readme) will be updated as
 ![Prompt Example](http://i.imgur.com/upiZDQu.png "Prompt Example")
 
 ##Installation##
-**Requirements**  
-- [Insatll Git](https://help.github.com/articles/set-up-git) and make sure it's added to your $path (you may need to google how to do this for your OS)  
 
-**Linux/Mac** (Recommended) (installer coming soon)
-- Make sure that you have hidden file showing (try ctrl + H/cmd + H)
-- Add .bashrc to to your */home* directory (e.g. */home/your_name*). If the file already exists, open it in a text editor and add the contents of the new *.bashrc* to the old *.bashrc* (replacing the file should not break anything, but better safe than sorry).  
-- If you want to make this effect all users and not just yourself, **ONLY** add the contents the *.bashrc* file to the bottom of */etc/bash.bashrc*. The file may have a simular name and not *bash.bashrc*, however experiance says it should be *bash.bashrc*  
-- Reopen any bash/terminal windows to see the effect.  
-
-**Linux/Mac (root user)**  
-- Coming Soon  
-
-**Windows**  
-- Coming Soon (installer)  
+Revamping... come back later
 
 ##Various Information##
 
