@@ -1,6 +1,7 @@
 <?php 
-// standard class (non cmd-line friendly)
-// cmd-line friendly moved to /resources/commands
+/**
+ * @copyright Nicholas Jordon
+ */
 class sh_color {
 	private $txt_colors = array();
 	private $txt_styles = array();
@@ -109,4 +110,65 @@ class sh_color {
 		return array_keys($this->bg_colors);
 	}
 }
+
 $color = new sh_color;
+
+// get arguments
+$longopts = array(
+	'no-stdin',
+	'print-all'
+);
+$args = getopt('s:S:c:C:',$longopts);
+
+// stdin
+$stdin = '';
+if(!isset($args['no-stdin'])){
+	if(!posix_isatty(STDIN)){$stdin = substr(file_get_contents('php://stdin'),0,-1);}
+}
+
+// test if arguments exist
+if(empty($args['c'])){
+	$args['c'] = NULL; // prevents error
+}
+if(empty($args['C'])){
+	$args['C'] = NULL; // prevents error
+}
+if(empty($args['S'])){
+	$args['S'] = NULL; // prevents error
+}
+
+if(empty($args['s'])){
+	if(empty($stdin)){
+		// error out if no string
+		$args['s'] = 'ERROR: String is empty, please use STDIN or argument -s';
+		$args['S'] = 'dark';
+		$args['c'] = 'gray';
+		$args['C'] = 'light_red';
+	}
+	else{
+		$args['s'] = (string) $stdin;
+		$str_switch = TRUE;
+	}
+}
+
+if(isset($args['print-all'])){
+	// print all the possiblities
+	$output = '';
+	foreach ($color->get_txtstyles() as $value) {
+		$output .= $color->color_string('This is the txt style: '.$value, 'green', NULL, $value).PHP_EOL;
+	}
+	foreach ($color->get_txtcolors() as $value) {
+		$output .= $color->color_string('This is the txt color: '.$value, $value).PHP_EOL;
+	}
+	foreach ($color->get_bgcolors() as $value) {
+		$output .= $color->color_string('This is the bg color: '.$value, 'gray', $value, 'dark').PHP_EOL;
+	}
+}
+else{
+	// or print the inputs
+	$output = $color->color_string($args['s'], $args['c'], $args['C'], $args['S']);
+}
+
+if(isset($str_switch) || isset($args['print-all'])){echo $output;}
+else{echo $stdin.$output;}
+
