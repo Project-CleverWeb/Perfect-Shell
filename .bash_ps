@@ -6,6 +6,8 @@
 # add aliases for PS
 # load PS1
 
+# get h/w of window
+echo -e "lines\ncols" | tput -S
 
 function git-unpushed {
 	brinfo=$(git branch -v)
