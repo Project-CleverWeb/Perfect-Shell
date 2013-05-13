@@ -30,21 +30,26 @@
 //echo json_encode($a,PRETTY_PRINT);
 
 function replaceOut($str){
-	$numNewLines = substr_count($str, "\n");
+	if(stripos($str, "\n")){
+		$lines = explode("\n",$str);
+	}
+	else{
+		$lines = array($str);
+	}
 	echo chr(27)."[0G"; // Set cursor to first column
 	echo $str;
-	if($numNewLines>0){
-		echo chr(27) . "[" . $numNewLines ."A"; // Set cursor up x lines
+	if(count($lines)>1){
+		echo chr(27) . "[" . (count($lines)-1) ."A"; // Set cursor up x lines
 	}
 }
 
-$i2 = 0;
-while($i2<6){
+$i2 = 1;
+while($i2<21){
 	$i = 0;
 	while ($i<21) {
-		$output = "loading script: $i2%s".($i*5)."[" .str_repeat('#',$i).str_repeat(' ', (20-$i)). "]";
+		$output = "loading script: $i2%s".($i*5)."%s [" .str_repeat('#',$i).str_repeat(' ', (20-$i)). "]";
 		$len = strlen($output);
-		$output = sprintf($output,str_repeat(' ', (80-$len)));
+		$output = sprintf($output,str_repeat(' ', (80-$len)),'%');
 		replaceOut($output);
 		usleep(200000);
 		$i++;
