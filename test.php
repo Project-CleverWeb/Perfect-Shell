@@ -47,7 +47,7 @@ $i2 = 1;
 while($i2<21){
 	$i = 0;
 	while ($i<21) {
-		$output = "loading script: $i2%s".($i*5)."%s [" .str_repeat('#',$i).str_repeat(' ', (20-$i)). "]";
+		$output = "loading script: $i2%s".($i*5)."%s [\033[96m" .str_repeat("#",$i)."\033[0m".str_repeat('#', (20-$i)). "]";
 		$len = strlen($output);
 		$output = sprintf($output,str_repeat(' ', (80-$len)),'%');
 		replaceOut($output);
@@ -57,7 +57,6 @@ while($i2<21){
 	$i2++;
 	
 	echo chr(27) . "[0G";
-	echo str_repeat(' ', 80);
 }
 
 
